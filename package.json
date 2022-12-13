@@ -11,7 +11,7 @@
   },
   "scripts": {
     "dev": "nodemon --watch ./src/back/index.ts --exec ts-node ./src/back/dev.ts",
-    "build": "tsc ./src/back/index.ts",
+    "build": "tsc",
     "start": "node ./src/back/index.js"
   },
   "devDependencies": {
