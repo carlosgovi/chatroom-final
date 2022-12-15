@@ -1,7 +1,7 @@
 import * as admin from "firebase-admin";
 // import * as serviceAccount from "./key.json";
 ///////////
-
+console.log("variables::::", process.env);
 ////////////
 ///utilizo las variables de entorno y no uso mas el json
 const variablesDeEntorno = process.env;

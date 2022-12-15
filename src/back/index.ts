@@ -3,7 +3,7 @@ import * as express from "express";
 //dejo de utilizar uuid y ahoar utilizamos nanoid
 import { nanoid } from "nanoid";
 //////////////////////
-
+console.log("variables::::", process.env);
 /////////////
 import * as cors from "cors";
 
