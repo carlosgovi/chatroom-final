@@ -7,7 +7,7 @@ console.log("variables::::", process.env, typeof process.env);
 const variablesDeEntorno: any = process.env;
 const firebaseConfig: any = {
   type: variablesDeEntorno.TYPE,
-  project_id: variablesDeEntorno.PROYECT_ID,
+  project_id: variablesDeEntorno.PROJECT_ID,
   private_key_id: variablesDeEntorno.PRIVATE_KEY_ID,
   private_key: variablesDeEntorno.PRIVATE_KEY,
   client_email: variablesDeEntorno.CLIENT_EMAIL,
