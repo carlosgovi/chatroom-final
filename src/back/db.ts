@@ -9,7 +9,7 @@ const firebaseConfig: any = {
   type: variablesDeEntorno.TYPE,
   project_id: variablesDeEntorno.PROJECT_ID,
   private_key_id: variablesDeEntorno.PRIVATE_KEY_ID,
-  private_key: variablesDeEntorno.PRIVATE_KEY,
+  private_key: variablesDeEntorno.PRIVATE_KEY?.replace(/\\n/g, "\n"),
   client_email: variablesDeEntorno.CLIENT_EMAIL,
   client_id: variablesDeEntorno.CLIENT_ID,
   auth_uri: variablesDeEntorno.AUTH_URI,
@@ -18,7 +18,7 @@ const firebaseConfig: any = {
   client_X509_cert_url: variablesDeEntorno.CLIENT_X509_CERT_URL,
   enviroment: variablesDeEntorno.ENVIROMENT,
 };
-console.log("objeto variables pasadas", firebaseConfig);
+console.log("objeto variables pasadas", typeof firebaseConfig, firebaseConfig);
 
 // var serviceAccount = require("path/to/serviceAccountKey.json");
 
