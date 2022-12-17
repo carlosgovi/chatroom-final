@@ -5,6 +5,6 @@
     "moduleResolution": "node",
     "resolveJsonModule": true
   },
-  "include": ["./src/**/*"],
+  "include": ["./src/back/*"],
   "files": ["./src/back/index.ts"]
 }

@@ -6,12 +6,19 @@
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "firebase-admin": "^11.3.0",
+    "firebase": "^8.7.1",
     "nanoid": "^3.0.0",
+    "@vaadin/router": "^1.7.4",
+    "lodash": "^4.17.21",
+    "parcel": "^2.8.0",
     "typescript": "^4.9.4"
   },
   "scripts": {
-    "dev": "nodemon --watch ./src/back/index.ts --exec ts-node ./src/back/dev.ts",
-    "build": "yarn install && tsc",
+    "dev:back": "nodemon --watch ./src/back/index.ts --exec ts-node ./src/back/dev.ts",
+    "dev:front": "parcel serve ./src/front/index.html",
+    "build:front": "npx parcel build ./src/front/index.html",
+    "build:back": "tsc",
+    "build": "yarn install && yarn build:front && yarn build:back",
     "start": "node ./src/back/index.js"
   },
   "devDependencies": {
