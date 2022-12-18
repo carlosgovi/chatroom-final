@@ -2,10 +2,19 @@ import firebase from "firebase";
 ///utilizo las variables de entorno y no uso mas el json
 const variablesDeEntorno: any = process.env;
 const firebaseConfig: any = {
-  apikey: variablesDeEntorno.API_KEY,
-  databaseURL: variablesDeEntorno.DATABASE_URL,
-  authDomain: variablesDeEntorno.AUTH_DOMAIN,
-  projectId: variablesDeEntorno.PROJECT_ID,
+  apiKey: "AIzaSyCKwgeOSD4aRlGS0k9MUgsTF3AkITSnW6I",
+  authDomain: "apx-dwfs-m6.firebaseapp.com",
+  databaseURL: "https://apx-dwfs-m6-default-rtdb.firebaseio.com",
+  projectId: "apx-dwfs-m6",
+  storageBucket: "apx-dwfs-m6.appspot.com",
+  messagingSenderId: "36468954221",
+  appId: "1:36468954221:web:4373e6b59465706d0c9b64",
+  measurementId: "G-L4DD8FFYQF",
+  // apikey: variablesDeEntorno.API_KEY,
+  // databaseURL: variablesDeEntorno.DATABASE_URL,
+  // authDomain: variablesDeEntorno.AUTH_DOMAIN,
+  // projectId: variablesDeEntorno.PROJECT_ID,
+  // messagingSenderId: "36468954221",
 };
 
 //app initializeApp recibe los datos de la cuenta
