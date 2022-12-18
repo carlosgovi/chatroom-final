@@ -160,8 +160,14 @@ app.post("/messages", function (req, res) {
   });
 });
 ///manejar las rutas q no estan declaradas
-app.use(express.static("dist"));
+// app.use(express.static("dist"));
 
+// app.get("*", (req, res) => {
+//   // res.sendFile("../front/index.html");
+
+// });
+app.use(express.static("dist"));
+const ROOT_PATH = __dirname.replace("src/back", "");
 app.get("*", (req, res) => {
-  res.sendFile("../front/index.html");
+  res.sendFile(ROOT_PATH + "dist/index.html");
 });

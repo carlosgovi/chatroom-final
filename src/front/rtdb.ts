@@ -5,6 +5,7 @@ const firebaseConfig: any = {
   apikey: variablesDeEntorno.API_KEY,
   databaseURL: variablesDeEntorno.DATABASE_URL,
   authDomain: variablesDeEntorno.AUTH_DOMAIN,
+  projectId: variablesDeEntorno.PROJECT_ID,
 };
 
 //app initializeApp recibe los datos de la cuenta
